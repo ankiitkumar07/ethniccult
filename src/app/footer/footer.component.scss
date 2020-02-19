@@ -1,0 +1,13 @@
+ul{
+	list-style: none;
+	& li{
+		padding: 0;
+		color: white;
+		& a{
+			text-decoration: none;
+			&:hover{
+				text-decoration: none;
+			}
+		}
+	}
+}

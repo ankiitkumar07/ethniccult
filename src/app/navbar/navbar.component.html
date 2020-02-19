@@ -1,0 +1,15 @@
+<mat-toolbar color="primary">
+	<mat-toolbar-row>
+		<span>Ethnic Cult</span>
+		<div *ngIf="currentUser; then thenBlock else elseBlock" class="ml-auto"></div>
+		<ng-template #thenBlock>
+			<button mat-raised-button color="primary" class="mx-1" routerLink="/">Home</button>
+			<button mat-raised-button color="primary" class="mx-1" (click)="logout()">Logout</button>
+		</ng-template>
+		<ng-template #elseBlock>
+			<button mat-raised-button color="primary" class="mx-1" routerLink="/login">Login</button>
+			<button mat-raised-button color="primary" class="mx-1" routerLink="/register">Signup</button>
+		</ng-template>
+		<!-- <mat-icon class="example-icon ml-auto" id="site-info-button" (click)="openMatDialog()" aria-hidden="false" aria-label="Example user verified icon">info</mat-icon> -->
+	</mat-toolbar-row>
+</mat-toolbar>
