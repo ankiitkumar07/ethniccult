@@ -13,4 +13,11 @@
 		</ng-template>
 		<!-- <mat-icon class="example-icon ml-auto" id="site-info-button" (click)="openMatDialog()" aria-hidden="false" aria-label="Example user verified icon">info</mat-icon> -->
 	</mat-toolbar-row>
+	<mat-toolbar-row>
+		<button mat-button *ngFor="let category of categories" [matMenuTriggerFor]="[category.name]">{{category.name}}</button>
+	</mat-toolbar-row>
 </mat-toolbar>
+
+<!-- <mat-menu #{{categories.first}}="matMenu" >
+	<button  mat-menu-item [matMenuTriggerFor]="[category.name]">{{category.name}}</button>
+</mat-menu> -->

@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { first } from 'rxjs/operators';
-
 import { AlertService } from '../_services/alert.service';
 import { AuthenticationService } from '../_services/authentication.service';
 
@@ -44,9 +43,9 @@ export class LoginComponent implements OnInit {
         this.returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/';
   }
 
-  openDialog() : any{
-    this.loginDialog.open(LoginDialogRef);
-  }  
+  // openDialog() : any{
+  //   this.loginDialog.open(LoginDialogRef);
+  // }  
 
 
   get f() { return this.loginForm.controls; }
@@ -74,17 +73,17 @@ export class LoginComponent implements OnInit {
 
 }
 
-@Component({
-  selector: 'login-dialog-ref',
-  template: '<p>Login form loading...</p>'
-})
-export class LoginDialogRef {
+// @Component({
+//   selector: 'login-dialog-ref',
+//   template: '<p>Login form loading...</p>'
+// })
+// export class LoginDialogRef {
 
-  constructor(private loginDialogRef: MatDialogRef<LoginDialogRef>) {
+//   constructor(private loginDialogRef: MatDialogRef<LoginDialogRef>) {
 
-  }
+//   }
 
-  close(): any {
-    this.loginDialogRef.dismiss();
-  }
-}
+//   close(): any {
+//     this.loginDialogRef.dismiss();
+//   }
+// }
