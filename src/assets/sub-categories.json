@@ -1,0 +1,42 @@
+[
+	{
+		"id": 1,
+		"categor_id": 1,
+		"name": "Top Wear"
+	},
+	{
+		"id": 2,
+		"categor_id": 1,
+		"name": "Bottom Wear"
+	},
+	{
+		"id": 3,
+		"categor_id": 2,
+		"name": "Sports Shoes"
+	},
+	{
+		"id": 4,
+		"categor_id": 3,
+		"name": "Dupatta"
+	},
+	{
+		"id": 5,
+		"categor_id": 1,
+		"name": "Winter Wear"
+	},
+	{
+		"id": 6,
+		"categor_id": 2,
+		"name": "Heels"
+	},
+	{
+		"id": 7,
+		"categor_id": 2,
+		"name": "Flats and Ballerians"
+	},
+	{
+		"id": 8,
+		"categor_id": 2,
+		"name": "Sneakers"
+	}
+]

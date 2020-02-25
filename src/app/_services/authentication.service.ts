@@ -11,7 +11,7 @@ import { User } from '../_models/user';
 export class AuthenticationService {
 
 	private currentUserSubject: BehaviorSubject<User>;
-	private currentUser: Observable<User>;
+	public currentUser: Observable<User>;
 
   constructor(private http: HttpClient) {
   	this.currentUserSubject = new BehaviorSubject<User>(JSON.parse(localStorage.getItem('currenUser')));

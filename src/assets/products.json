@@ -1,0 +1,70 @@
+[
+	{
+		"id": 1,
+		"name": "Men Solid Bomber Jacket",
+		"brand_id": 1,
+		"gender": "male",
+		"material": "100% polyester",
+		"care": "Dry-clean",
+		"category_id": 1,
+		"sub_category_id": 5,
+		"product_details": "green solid bomber jacket, has a stan collar, 4 pockets, zip closure, long sleeves, straight hem, polyester lining",
+		"price": 1279,
+		"img_address": ""
+	},
+
+	{
+		"id": 2,
+		"name": "Men Green Solid Sweatshirt",
+		"brand_id": 7,
+		"gender": "Male",
+		"material": "100% Cotton",
+		"care": "Mavchine Wash",
+		"category_id": 1,
+		"sub_category_id": 5,
+		"product_details": "Green solid Sweatshirt, has a round neck, straight hem",
+		"price": 1249,
+		"img_address": ""
+	},
+
+	{
+		"id": 3,
+		"name": "women Beige Solid Block Heels",
+		"brand_id": 8,
+		"gender": "female",
+		"material": "Synthetic",
+		"category_id": 2,
+		"sub_category_id": 6,
+		"care": "Wipe with a clean , dry cloth to remove dust.",
+		"product_details": "A pair of beige open toe block heels, has a regular styling, open back detail. \n Synthetic upper \n Cushioned footbed \n Textured and patterned outsole, has a block heel \n Warranty: 1 month",
+		"price": 2999,
+		"img_address": ""
+	},
+
+	{
+		"id": 4,
+		"name": "women Grey and Black Design Ballerinas",
+		"brand_id": 9,
+		"gender": "female",
+		"material": "Synthetic",
+		"category_id": 2,
+		"sub_category_id": 7,
+		"care": "Wipe with a clean , dry cloth to remove dust.",
+		"product_details": "A pair of beige open toe block heels, has a regular styling, open back detail. \n Synthetic upper \n Cushioned footbed \n Textured and patterned outsole, has a block heel \n Warranty: limited warranty",
+		"price": 2999,
+		"img_address": ""
+	},
+	{
+		"id": 5,
+		"name": "Men White Escaper SL Sneakers",
+		"brand_id": 3,
+		"gender": "Male",
+		"material": "Synthetic Leather",
+		"care": "Wipe and clean, dry cloth to remove dust",
+		"category_id": 2, 
+		"sub_category_id": 8,
+		"product_details": "A pair of round-toe white sneakers, has regular styling, lace-up",
+		"price": 2639,
+		"img_address": ""
+	}
+]

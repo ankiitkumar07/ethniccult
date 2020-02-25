@@ -4,7 +4,10 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { first } from 'rxjs/operators';
 
 import { AlertService } from '../_services/alert.service';
-import { AuthenticationService } from '../_services/authentication.service'
+import { AuthenticationService } from '../_services/authentication.service';
+
+
+import { MatDialog, MatDialogRef} from '@angular/material/dialog';
 
 @Component({
   selector: 'app-login',
@@ -23,7 +26,8 @@ export class LoginComponent implements OnInit {
         private route: ActivatedRoute,
         private router: Router,
         private authenticationService: AuthenticationService,
-        private alertService: AlertService
+        private alertService: AlertService,
+        private loginDialog: MatDialog
         ) {
   			if (this.authenticationService.currentUserValue) { 
 	            this.router.navigate(['/']);
@@ -39,6 +43,10 @@ export class LoginComponent implements OnInit {
         // get return url from route parameters or default to '/'
         this.returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/';
   }
+
+  openDialog() : any{
+    this.loginDialog.open(LoginDialogRef);
+  }  
 
 
   get f() { return this.loginForm.controls; }
@@ -64,4 +72,19 @@ export class LoginComponent implements OnInit {
                 });
     }
 
+}
+
+@Component({
+  selector: 'login-dialog-ref',
+  template: '<p>Login form loading...</p>'
+})
+export class LoginDialogRef {
+
+  constructor(private loginDialogRef: MatDialogRef<LoginDialogRef>) {
+
+  }
+
+  close(): any {
+    this.loginDialogRef.dismiss();
+  }
 }

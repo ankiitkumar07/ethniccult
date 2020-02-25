@@ -13,6 +13,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
+import { MatDialogModule } from '@angular/material/dialog';
 
 
 
@@ -28,6 +29,7 @@ import { AlertComponent } from './alert/alert.component';
 import { fakeBackendProvider } from './_helpers/fake-backend';
 import { JwtInterceptor } from './_helpers/jwt.interceptor';
 import { ErrorInterceptor } from './_helpers/error.interceptor';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
@@ -38,7 +40,8 @@ import { ErrorInterceptor } from './_helpers/error.interceptor';
     ProductsComponent,
     LoginComponent,
     RegisterComponent,
-    AlertComponent
+    AlertComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
